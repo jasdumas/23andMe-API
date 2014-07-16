@@ -11,7 +11,7 @@ data = JSON.load response
 risks = data[0]["risks"]
 risks.each { 
 	|risk|
-    # Fill out the code below
+
     formatted_risk = "%.1f" % (risk["risk"] * 100)
     puts "#{risk["description"]}: #{formatted_risk}%"
 }
